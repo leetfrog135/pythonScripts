@@ -1,5 +1,8 @@
 import os
 import time
+import datetime
+
+now = datetime.datetime.now()
 
 def loopF():
         os.system('who')
@@ -7,8 +10,10 @@ def loopF():
 
 while True:
         print
-        date()
+        print("Time of event: " + now.strftime("%d-%m-%Y %H:%M"))
+        print
         print("Users currently logged in:")
+        print
         loopF()
         print
 
